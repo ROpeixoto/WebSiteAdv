@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Plano de Saúde</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Calculadora do Plano de Saúde</h1>
+<div id="formulario">
+  <p>Digite o valor que pagava no início do plano de saúde</p>
+  <input class="entrada" id="antes" placeholder="R$">
+
+  <p>Digite há quanto tempo possui o plano de saúde</p>
+  <input class="entrada" id="anos" placeholder="Anos">
+
+  <p>Digite o valor do plano atualmente </p>
+  <input class="entrada" id="depois" placeholder="R$">
+
+  <button onclick="calcular()">Calcular</button>
+  </div>
+  
+ <div id="resultado-final" class="oculto">
+  <p>Valor que você deveria pagar após <strong id="anos-resultado"></strong> anos: <strong id="valor-resultado"></strong></p>
+  <p>Você está pagando  <strong id="valor-inicial"></strong></p>
+  <p>Você está sendo enganado!</p>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
