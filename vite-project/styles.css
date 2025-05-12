@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
+  color: aliceblue;
   margin: 50px auto;
   max-width: 600px;
   padding: 20px;
@@ -11,16 +12,31 @@ body {
   background-attachment: fixed;
 }
 
-
-input, button {
+input {
+  outline: 0;
   padding: 10px;
-  margin: 10px;
+  width: 350px;
+  height: 25px;
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: hsla(245, 15%, 58%, 0.1);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-input.entrada{
-  width: 100%;
-  max-width: 300px;
-  border: 1px solid #838383;
+button {
+  background-color: hsla(245, 15%, 58%, 0.1);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsla(245, 15%, 58%, 0.2);
+}
+button:active {
+  background-color: hsla(245, 15%, 58%, 0.3);
 }
 
 #resultado {
@@ -28,6 +44,21 @@ input.entrada{
   font-size: 1.2em;
 }
 
+#anos-resultado {
+  font-size: 1.5em;
+  color: hsl(48, 100%, 75%) ;
+}
+
+
+
+#depois-resultado{
+  font-size: 1.5em;
+  color: hsl(0, 83%, 47%)
+}
+strong.dinheiro{
+  font-size: 1.9em;
+  color: hwb(93 25% 0%)
+}
 .oculto {
   display: none;
 }
