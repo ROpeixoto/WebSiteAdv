@@ -10,9 +10,7 @@ function calcular() {
     document.getElementById("resultado-final").classList.remove('oculto');
     document.getElementById("anos-resultado").textContent = '';
     document.getElementById("valor-resultado").textContent = '';
-
     document.getElementById("depois-resultado").textContent = '';
-
     document.getElementById("diferenca-acumulado").textContent = '';
     return;
   }
@@ -30,7 +28,7 @@ function calcular() {
   let totalDecrescente = 0;
   for (let i = 0; i < anos; i++) {
     totalDecrescente += valorDecrescente * 12;
-    if (i < anos - 1) valorDecrescente *= 0.95;
+    if (i < anos - 1) valorDecrescente *= 0.98;
   }
 
   // Diferença entre os acumulados
